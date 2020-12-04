@@ -1,0 +1,36 @@
+<div *ngIf="blog && !error">
+
+  <div class="cover" >
+    <img [src]="blog.coverUrl" alt="Puffins" />
+  </div>
+  <div class="details">
+    <div class="head">
+      <div class="user">
+        <div class="user_image">
+          <img [src]="blog.coverUrl" alt="Puffins" />
+        </div>
+        <div class="user_info">
+          {{blog.author.full_name}}
+          <span class="user_email">{{blog.author.email}}</span>
+        </div>
+      </div>
+      <div class="date"><p>{{blog.createdAt | date: "medium"}}</p></div>
+    </div>
+    <div class="body">
+      <div class="title"><h4>{{blog.title}}</h4></div>
+      <div class="content">
+        <p>
+          {{blog.content}}
+        </p>
+      </div>
+    </div>
+    <div class="read_count"><p>Read times {{blog.read_count}}(times)</p></div>
+  </div>  
+</div>
+<p *ngIf="!blog && !error">Loading {{error}}</p>
+
+<div *ngIf="error">
+
+  <div class="status">{{error.status}}</div>
+  <div class="message">{{error.message}}</div>
+</div>

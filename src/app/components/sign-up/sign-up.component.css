@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .menu{
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      width: fit-content;
+      height: fit-content;
+      border: 1px solid #dddddd;
+      border-top: 2px solid #5f30ff;
+      padding: 15px;
+  }
+  
+  
+  
+  .menu .title{
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 5%;
+  }
+  
+  .name, .email, .password, .confirmation{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5%;
+  }
+  
+  .name label, .email label, .password label, .confirmation label{
+      margin-bottom: 5%;
+      font-size: 12px;
+      font-weight: 700;
+  }
+  
+  .name input, .email input, .password input, .confirmation input{
+      font-size: 12px;
+      padding: 2%;
+      width: 300px;
+  }
+  .submit{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  .login_btn{
+      border: none;
+      background: #5f30ff;
+      color: white;
+      padding: 10px;
+      border-radius: 7%;
+  }
+  
+  .pic{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      z-index: -1;
+  }
+  
+  @media(max-width:860px){
+      .menu{
+          left: 30%;
+      }
+      .pic{
+          width: 140px;
+          height: 140px;
+      }
+  }
+  
+  @media(max-width:600px){
+      .menu{
+          left: 20%;
+      }
+  }

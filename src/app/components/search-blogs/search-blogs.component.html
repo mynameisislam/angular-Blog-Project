@@ -1,0 +1,19 @@
+
+    <!-- category navigation section  -->
+    <div class="category_selector">
+      <div class="title"><h4>Categories</h4></div>
+      <div class="nav">
+        <button class="btn" [class.active]="!categoryName"  (click)="changeCategory('')">All Blogs</button>
+        <button class="btn" [class.active]="categoryName == category.name"  (click)="changeCategory(category.name)"  *ngFor="let category of categories">{{category.name}}</button>
+      </div>
+    </div>
+
+    <!-- articles search results  -->
+
+    <div class="articles" *ngFor="let blog of blogs"  [routerLink]="['../blog/'+blog._id]">
+      <app-blog-card [blog]="blog"></app-blog-card>
+    </div>
+
+    <div class="pagination">
+      <app-pagination [page]="i" [pageNumber]="pageNumber" *ngFor="let page of pagesList;let i = index">{{i+1}}</app-pagination>
+    </div>

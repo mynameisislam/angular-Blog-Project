@@ -1,0 +1,31 @@
+<div class="article">
+  <div class="logo">
+    <img [src]="blog.coverUrl" alt="article-image" />
+  </div>
+  <div class="details">
+    <div class="head">
+      <div class="user">
+        <div class="user_image">
+          <img [src]="blog.coverUrl" alt="user" width="29px" height="29px" />
+        </div>
+        <div class="user_info">
+          {{ blog.author.full_name }}
+          <span class="user_email">{{ blog.author.email }}</span>
+        </div>
+      </div>
+      <div class="date">
+        <p>{{ blog.createdAt | date: "medium" }}</p>
+      </div>
+    </div>
+    <div class="body">
+      <div class="title">
+        <p>{{ blog.title }}</p>
+      </div>
+      <div class="content">
+        <p>
+          {{ blog.content }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

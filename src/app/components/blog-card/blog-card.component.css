@@ -1,0 +1,106 @@
+.article {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  /* first item   logo */
+  
+  .article .logo {
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  .article .logo img {
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+
+    
+  }
+  
+  /* second item of article  details */
+  
+  .article .details {
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+    flex: 2;
+  }
+  
+  /* first item of details   head */
+  
+  .article .details .head {
+    flex: 1;
+    height: fit-content;
+    display: flex;
+  }
+  
+  /* first item of head   user */
+  
+  .article .details .head .user {
+    display: flex;
+    flex: 3;
+  }
+  /* first item of user    user image */
+  .article .details .head .user .user_image {
+    margin-right: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .article .details .head .user .user_image img {
+    border-radius: 50px;
+  }
+  /* second item of user   user info */
+  .article .details .head .user .user_info {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .article .details .head .user .user_info .user_email {
+    color: #888888;
+    font-size: 10px;
+  }
+  
+  
+  /* second item of head   date */
+  
+  .article .details .head .date {
+    flex: 1;
+    justify-content: center;
+    font-size: 13px;
+    align-items: flex-start;
+    display: flex;
+    color: #888888;
+  }
+  
+  
+  /* body content */
+  
+  .article .details .body {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .article .details .body .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .article .details .body .content {
+    color: #363636;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 700;
+  }

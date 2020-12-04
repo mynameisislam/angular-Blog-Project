@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+
+}
+
+.articles{
+    flex: 2;
+}
+
+
+.profile{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 654px;
+    align-items: center;
+}
+.profile .user{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.profile .user .image{
+    flex: 2;
+}
+.profile .user .info{
+    flex: 1;
+    font-size: 12px;
+    font-weight: 800;
+    justify-content: space-around;
+    height: 48px;
+}
+.profile .user .image,.profile .user .info{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.profile .user .image img{
+    width: 160px;
+    border-radius: 50%;
+    height: 160px;
+}
+.profile .user .info .name{
+    font-size: 19px;
+    font-weight: 800;
+
+}
+.profile .user .info .email{
+    font-size: 18px;
+    font-weight: lighter;
+    color: #888888;
+}
+
+.profile .update{
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.profile .update .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: flex-end;
+    width: fit-content;
+
+}
+.profile .update .input input{
+    width: 100%;
+    height: 45px;
+    padding: 5px 2px;
+    margin-bottom: 10px;
+}
+.profile .update .input button{
+    width: 50%;
+    background: #5f30ff;
+    border: none;
+    color: white;
+    height: 50%;
+    border-radius: 5%;
+    font-size: 0.7em;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+table, tr{
+    border: 1px solid black;
+}
+td{
+    padding: 20px 5px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.articles button{
+    border: none;
+    color: red;
+    background: none;
+}
+.articles h3{
+    margin-bottom: 5px;
+}
+
+.fnLabel{
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}

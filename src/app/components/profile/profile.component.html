@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="profile">
+        <div class="user">
+            <div class="image"><img src="./assets/Puffins.jpg" alt=""></div>
+            <div class="info">
+                <span class="name">{{author.full_name}}</span>
+                <span class="email">{{author.email}}</span>
+            </div>
+        </div>
+        <div class="update">
+            <div class="input">
+                <div class="fnLabel">
+                <label for="full_name">Name</label>
+                </div>
+                <input type="text" id="full_name" name="full_name" value="{{author.full_name}}">
+                <button>Update</button>
+            </div>
+        </div>
+    </div>
+    <div class="articles" >
+        <h3>My Blogs:</h3>
+        <table>
+            <tr *ngFor="let blog of blogs" >
+                <td>{{author.full_name}}</td>
+                <td>{{blog.read_count}}</td>
+                <td>{{blog.updatedAt | date: "medium"}}</td>
+                <td><button>delete</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
